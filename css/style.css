@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
 .lign {
     width: 100%;
     margin: auto;
@@ -13,4 +15,8 @@
 #nav_h:hover {
     background-color: #000;
     color: #fff;
+}
+
+header {
+    font-family: Ubuntu, sans-serif;
 }
