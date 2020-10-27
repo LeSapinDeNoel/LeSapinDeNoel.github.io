@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
 
+body {
+    font-family: Nunito;
+}
+
+body h1 {
+    font-weight: bold;
+}
+
+body header {
+    font-family: Ubuntu, sans-serif;
+}
+
 .lign {
     width: 100%;
     margin: auto;
@@ -7,16 +19,35 @@
 }
 
 .lign_s {
-    width: 75%;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.lign_s::before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.5);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
 
 #nav_h:hover {
-    background-color: #000;
+    background-color: #2d2f31;
     color: #fff;
 }
 
-header {
-    font-family: Ubuntu, sans-serif;
+main {
+    margin-top: 50px;
+}
+
+main article {
+    margin-top: 20px;
 }
