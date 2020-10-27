@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
 
 body {
     font-family: Nunito;
@@ -44,9 +45,6 @@ body header {
     color: #fff;
 }
 
-header {
-}
-
 .banniere{
     height: 300px;
     background: no-repeat center center / cover url("../img/Background\ header.jpg") fixed;
@@ -59,4 +57,53 @@ main {
 
 main article {
     margin-top: 20px;
+}
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item p {
+  font-size: 1rem;
+}
+
+.timeline-item h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.785rem;
+}
+
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: "";
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.timeline-item:last-child {
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+       -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+          border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+          border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
