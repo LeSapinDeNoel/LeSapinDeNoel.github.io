@@ -173,3 +173,9 @@ main article {
 .footer {
   padding-top: 20px;
 }
+
+@media screen and (max-width: 772px) {
+  .banniere_for {
+    height: 500px;
+  }
+}
