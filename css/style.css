@@ -45,6 +45,16 @@ body header {
     color: #fff;
 }
 
+#push_ta {
+  background-color: #2d2f31;
+  color: #fff;
+}
+
+#push_ta:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .banniere{
     height: 300px;
     background: no-repeat center center / cover url("../img/Background\ header.jpg") fixed;
