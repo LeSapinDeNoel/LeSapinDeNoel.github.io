@@ -180,6 +180,10 @@ main article {
   margin-top: 0;
 }
 
+.qual {
+  width: 100%;
+}
+
 .competence p{
   margin: 20px 10px;
   width: 100px;
@@ -197,6 +201,10 @@ main article {
 
 .mbtn:hover {
   color: #992e2e;
+}
+
+#ouni {
+  text-decoration: none;
 }
 
 .footer {
