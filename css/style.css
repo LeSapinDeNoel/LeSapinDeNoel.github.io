@@ -189,6 +189,16 @@ main article {
   font-size: x-large;
 }
 
+.mbtn {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.7);
+  transition: .3s;
+}
+
+.mbtn:hover {
+  color: #992e2e;
+}
+
 .footer {
   padding-top: 20px;
 }
