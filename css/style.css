@@ -214,5 +214,10 @@ main article {
 @media screen and (max-width: 772px) {
   .banniere_for {
     height: 500px;
+    
+  }
+  .med {
+    display: flex;
+    flex-direction: column;
   }
 }
