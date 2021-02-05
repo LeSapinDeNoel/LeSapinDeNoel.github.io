@@ -1,223 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700");
-
-body {
-    font-family: Ubuntu;
+* {
+    font-family: sans-serif;
+    color: #f9f9f9;
 }
 
-body h1 {
-    font-weight: bold;
+.hide, .show{
+    cursor: pointer;
 }
 
-body header {
-    font-family: Ubuntu, sans-serif;
+.game_menu .menu h1 {
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-size: xx-large;
 }
 
-.lign {
-    width: 100%;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+.game_menu {
+    margin: 0;
+    padding: 0;
+    background-color: #36383F;
 }
 
-.lign_s {
-    overflow: visible;
-    height: 30px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-    width: 80%;
-}
-
-.lign_s::before {
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color:rgba(0, 0, 0, 0.5);
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-}
-
-#nav_h {
-  transition: .3s;
-}
-
-#nav_h:hover {
-    background-color: #992e2e;
-    color: #fff;
-}
-
-#push_ta {
-  background-color: #2d2f31;
-  color: #fff;
-  transition: .3s;
-}
-
-#push_ta:hover {
-  background-color: #992e2e;
-  color: #fff;
-}
-
-.no_pad {
-  padding: 0;
-}
-
-.banniere {
-    height: 300px;
-    background: no-repeat center center / cover url("../img/Background_header.jpg") fixed;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.527);
-}  
-
-.banniere_for {
-  height: 400px;
-  background: no-repeat center center / cover url("../img/formation.jpg") fixed;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.527);
-  margin-top: 30px;
-  color: #fff;
-}
-
-.banniere_for h1 {
-  margin-top: 30px;
-  padding: 10px 10px;
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 3px;
-}
-
-.progress {
-  width: 300px;
-  height: 30px;
-  font-size: medium;
-  border-radius: 0px;
-}
-
-main {
-    margin-top: 50px;
-}
-
-main article {
-    margin-top: 20px;
-}
-
-.timeline-item {
-  padding: 3em 2em 2em;
-  position: relative;
-  color: rgba(0, 0, 0, 0.7);
-  border-left: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.timeline-item p {
-  font-size: 1rem;
-}
-
-.timeline-item h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5em;
-}
-
-.timeline-item::before {
-  content: attr(date-is);
-  position: absolute;
-  left: 2em;
-  font-weight: bold;
-  top: 1em;
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 0.785rem;
-}
-
-.timeline-item::after {
-  width: 10px;
-  height: 10px;
-  display: block;
-  top: 1em;
-  position: absolute;
-  left: -7px;
-  border-radius: 10px;
-  content: "";
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  background: white;
-}
-
-.timeline-item:last-child {
-  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
-  -webkit-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-       -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-          border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
-          border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-}
-
-#formations h3{
-    font-family: Oswald, sans-serif;
-    font-weight: 300;
-}
-
-#skills {
-  margin-top: 0;
-}
-
-#skills h1 {
-  margin-top: 30px;
-}
-
-.bk_r {
-  background-color: #992e2e;
-  color: #fff;
-}
-
-.br_b {
-  background-color: #495057;
-  color: #fff;
-}
-
-.nm {
-  margin-bottom: 0;
-}
-
-.nmt {
-  margin-top: 0;
-}
-
-.qual {
-  width: 100%;
-}
-
-.competence p{
-  margin: 20px 10px;
-  width: 100px;
-}
-
-.beauti-text p{
-  font-size: x-large;
-}
-
-.mbtn {
-  text-decoration: underline;
-  color: rgba(0, 0, 0, 0.7);
-  transition: .3s;
-}
-
-.mbtn:hover {
-  color: #992e2e;
-}
-
-#ouni {
-  text-decoration: none;
-}
-
-.footer {
-  padding-top: 20px;
-}
-
-@media screen and (max-width: 772px) {
-  .banniere_for {
-    height: 500px;
-    
-  }
-  .med {
+.game_menu .menu {
+    padding: 20%; 
     display: flex;
     flex-direction: column;
-  }
+    justify-content: center;
+    align-items: center;
+}
+
+.game_menu .menu a {
+    margin: 10px;
+    text-decoration: none;
+    color: #f9f9f9b0;
+    font-size: x-large;
+    transition: 0.5s ease-in-out;
+}
+
+.game_menu .menu a:hover {
+    color: #f9f9f9;
+    transform: scale(1.1);
 }
